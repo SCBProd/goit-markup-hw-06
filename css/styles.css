@@ -29,9 +29,8 @@ textarea {
 }
 
 
-.hide {
-  display: none;
-}
+
+
 
 .visually-hidden {
   position: absolute;
@@ -110,6 +109,8 @@ a {
 }
 
 img {
+  max-width: 100%;
+  max-height: 100%;
   display: block;
 }
 
@@ -191,7 +192,7 @@ a {
 }
  @media screen and (min-width:320px) {
    .header-logo-a {
-     padding: 12px 0 12px;
+     padding: 16px 0 16px;
    }
      .nav-ref-address {
       color:var(--slate)
@@ -276,9 +277,23 @@ a {
   .header-nav-ul {
       display: none;
     }
-        burger-btn {
-
-        }
+ .burger-btn {
+ 
+                
+   border: 1px solid rgba(0, 0, 0, 0.0);
+   padding: 4px 3px;
+   height: 24px;
+   width: 24px;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--white);
+ }
+                
+ .icon-burger {
+  overflow:visible;
+  align-items: center;
+  justify-content: center;
+ }
   
     
 
@@ -446,7 +461,7 @@ a {
  @media screen and (min-width:1158px) {
   .secone {
 
-      max-width: 1158px;
+      max-width: 1440px;
       max-height: 600px;
       padding: 188px 0 188px 0;
       
@@ -565,20 +580,20 @@ a {
 
  @media screen and (min-width:320px) {
   .sectwo {
-    padding: 96px 16px;
+    padding: 96px 0 ;
   }
  }
 
  @media screen and (min-width:768px) {
   .sectwo {
-      padding: 96px 16px;
+      padding: 96px 0;
     }
  }
 
 
  @media screen and (min-width:1158px) {
   .sectwo {
-      padding: 120px 156px;
+      padding: 120px 0;
   
     }
  }
@@ -634,14 +649,17 @@ a {
  }
  .sectwo-htwo {
   
-  justify-content: center;
+  
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: left;
+    text-align: center;
     color: var(--navy-blue);
     margin-bottom: 8px;
+ }
+ .sectwo-p {
+   text-align: left;
  }
  }
 
@@ -650,9 +668,7 @@ a {
     justify-content: left;
     text-align: left;
   }
-  .sectwo-p {
-    text-align: left;
-  }
+  
  }
  @media screen and (min-width:1158px) {
   .sectwo-htwo {
@@ -927,6 +943,8 @@ a {
  @media screen and (min-width:320px) {
   .image-list-item {
       overflow: hidden;
+      width: 100%;
+
       
   
     }
@@ -936,6 +954,7 @@ a {
  @media screen and (min-width:768px) {
   .image-list-item {
       min-width: 356px;
+      width: calc((100% - 48px) / 3);
   
   
     }
@@ -1144,10 +1163,7 @@ footer .header-logo-word {
                   
         
                 }
-        .social-footer {
-          margin-top: 72px;
-          margin-bottom: 72px;
-        }
+
  }
 
  @media screen and (min-width:768px) {
@@ -1160,7 +1176,7 @@ footer .header-logo-word {
 
         .footer-container {
           justify-content: left ;
-          padding: 0 108px;
+          padding: 96px 108px;
           
         }
                 .social-p {
@@ -1175,7 +1191,7 @@ footer .header-logo-word {
       margin-bottom: 0;
     }
         .footer-container {
-         padding: 0 0;
+         padding: 0 15px;
           
 
           
@@ -1361,12 +1377,13 @@ label {
  @media screen and (min-width:768px) {
   .modal {
       padding: 72px 24px 24px 24px;
+      width: 408px;
  }
 }
 
  @media screen and (min-width:1158px) {
   .modal {
-    width: 408px;
+    
   }
  }
 
@@ -1632,6 +1649,8 @@ button.send-button:focus {
       border: 1px solid rgba(0, 0, 0, 0.1);
       padding: 0;
     }
+
+  
   
     .menu-links-nav {
       font-weight: 700;
@@ -1662,6 +1681,9 @@ button.send-button:focus {
       font-size: 20px;
       line-height: 1.2;
       letter-spacing: 0.02em;
+      
+    }
+    .mobile-address{
       margin-bottom: 48px;
     }
   
